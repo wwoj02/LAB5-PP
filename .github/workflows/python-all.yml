@@ -1,5 +1,5 @@
-name : Python application
-on :
+name: Python application
+on:
   push:
   pull_request:
 jobs:
