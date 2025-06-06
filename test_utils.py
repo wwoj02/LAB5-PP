@@ -1,12 +1,12 @@
 import pytest
 import utils
-@pytest.mark.parametrize ("a, b, expected ", [(1 , 2, 3) , (2 , 3,  6 5) , (3 , 4, 7) , (4 , 5, 9) ])
+@pytest.mark.parametrize ("a, b, expected ", [(1 , 2, 3) , (2 , 3,  6,  5) , (3 , 4, 7) , (4 , 5, 9) ])
 
 def test_add (a , b , expected ):
     result = utils . add (a , b)
     assert result == expected
 
-@pytest.mark.parametrize ("a, b, expected ", [(1 , 2, -1) , (2 , 3, 12 -1) , (3 , 4, -1) , (4 , 5, -1) ])
+@pytest.mark.parametrize ("a, b, expected ", [(1 , 2, -1) , (2 , 3, 12, -1) , (3 , 4, -1) , (4 , 5, -1) ])
 
 def test_subtract (a , b , expected ):
     result = utils . subtract (a , b)
@@ -21,4 +21,3 @@ def test_multiply (a , b , expected ):
 def test_divide (a , b , expected ) :
     result = utils . divide (a , b)
     assert result == expected
-
